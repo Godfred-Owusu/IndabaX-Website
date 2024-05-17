@@ -11,14 +11,14 @@
     <script src="./app.js" defer></script>
     <title>Document</title>
   </head>
-  <body class="overflow-x-hidden ">
+  <body class="overflow-x-hidden">
     <!-- header -->
-    
+
     <section class="mx-10">
       <header class="flex w-full items-center justify-between my-8">
         <!-- logo -->
         <div class="flex items-center gap-1">
-          <img src="./images/logo.png" alt="logo" class="inline" >
+          <img src="./images/logo.png" alt="logo" class="inline" />
           <div>
             <span class="block text-[#DE0220] leading-[1]">Ghana</span>
             <span class="block text-[#000D30] leading-[1]">Data Science</span>
@@ -28,126 +28,369 @@
         <!-- biggger screen nav-->
         <nav class="flex-1 hidden md:inline-block">
           <ul class="flex items-center w-full justify-around">
-            <li><a class="text-[#000D30] text-xl" href="/schedule">Schedule</a></li>
-            <li><a class="text-[#000D30] text-xl" href="/speakers">Speakers</a></li>
-            <li><a class="text-[#000D30] text-xl" href="/travel-guide">Travel Guide</a></li>
-            <li><a class="text-[#000D30] text-xl" href="/gallery">Gallery</a></li>
-            <li><a class="text-[#000D30] text-xl" href="/register">Register</a></li>
+            <li>
+              <a class="text-[#000D30] text-xl" href="/schedule">Schedule</a>
+            </li>
+            <li>
+              <a class="text-[#000D30] text-xl" href="/speakers">Speakers</a>
+            </li>
+            <li>
+              <a class="text-[#000D30] text-xl" href="/travel-guide"
+                >Travel Guide</a
+              >
+            </li>
+            <li>
+              <a class="text-[#000D30] text-xl" href="/gallery">Gallery</a>
+            </li>
+            <li>
+              <a class="text-[#000D30] text-xl" href="/register">Register</a>
+            </li>
           </ul>
         </nav>
         <!-- mobile screen nav humb -->
-        <div id="openModalBtn" class="bg-[#000D30] text-base rounded-sm flex flex-col gap-1 p-2 cursor-pointer absolute top-10 right-8 md:hidden">
+        <div
+          id="openModalBtn"
+          class="bg-[#000D30] text-base rounded-sm flex flex-col gap-1 p-2 cursor-pointer absolute top-10 right-8 md:hidden"
+        >
           <div class="h-1 w-4 bg-white rounded-sm"></div>
           <div class="h-1 w-4 bg-white rounded-sm"></div>
           <div class="h-1 w-4 bg-white rounded-sm"></div>
         </div>
-        
       </header>
-     <!-- modal mobile screen -->
-     <div id="modal" class="fixed inset-0  hidden items-center justify-end transition-opacity duration-300 z-[999]">
-        <div id="modalContent" class="bg-[#000D30]   w-2/3 h-full mt-20 transform translate-x-full transition-transform duration-300">
-            <div class="flex justify-end  p-4">
-                <!-- <h2 class="text-xl font-semibold">Modal Title</h2> -->
-                <button id="closeModalBtn" class="text-white text-xl flex-end"><i class="fa-solid fa-xmark"></i></button>
-            </div>
-            <div class="p-4">
-                <ul class="text-white text-xl flex flex-col gap-4">
-                  <li><a href="/">Home</a></li>
-                  <li><a href="/schedule">Schedule</a></li>
-                  <li><a href="/speaker">Speakers</a></li>
-                  <li><a href="/travel-guide">Travel Guide</a></li>
-                  <li><a href="/gallery">Gallery</a></li>
-                </ul>
-            </div>
-            
+      <!-- modal mobile screen -->
+      <div
+        id="modal"
+        class="fixed inset-0 hidden items-center justify-end transition-opacity duration-300 z-[999]"
+      >
+        <div
+          id="modalContent"
+          class="bg-[#000D30] w-2/3 h-full mt-20 transform translate-x-full transition-transform duration-300"
+        >
+          <div class="flex justify-end p-4">
+            <!-- <h2 class="text-xl font-semibold">Modal Title</h2> -->
+            <button id="closeModalBtn" class="text-white text-xl flex-end">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+          </div>
+          <div class="p-4">
+            <ul class="text-white text-xl flex flex-col gap-4">
+              <li><a href="/">Home</a></li>
+              <li><a href="/schedule">Schedule</a></li>
+              <li><a href="/speaker">Speakers</a></li>
+              <li><a href="/travel-guide">Travel Guide</a></li>
+              <li><a href="/gallery">Gallery</a></li>
+            </ul>
+          </div>
         </div>
-    </div>
+      </div>
     </section>
     <!-- hero -->
     <section class="my-4 max-w-md mx-auto md:max-w-[900px] mx-10">
-      <h2 class="text-[#000D30] text-4xl font-extrabold leading-none   md:text-7xl md:font-black text-center z-[500]">Unleasing the potential of AI through grassroots engagement</h2>
-      <img src="./images/Line-9.png" class="-mt-[20px] inline-block -z-50 mx-auto" alt="signature">
+      <h2
+        class="text-[#000D30] text-4xl font-extrabold leading-none md:text-7xl md:font-black text-center z-[500]"
+      >
+        Unleasing the potential of AI through grassroots engagement
+      </h2>
+      <img
+        src="./images/Line-9.png"
+        class="-mt-[20px] inline-block -z-50 mx-auto"
+        alt="signature"
+      />
       <!-- venue and date -->
-      <div class="flex mx-auto  w-full items-center gap-4 justify-around my-8 text-xl flex-col md:flex-row">
+      <div
+        class="flex mx-auto w-full items-center gap-4 justify-around my-8 text-xl flex-col md:flex-row"
+      >
         <div class="flex items-center gap-4">
-          <img src="./images/venue.png" alt="venue icon">
+          <img src="./images/venue.png" alt="venue icon" />
           <span>KNUST Campus, Kumasi</span>
         </div>
         <div class="flex items-center gap-4">
-          <img src="./images/Date.png" alt="date icon">
+          <img src="./images/Date.png" alt="date icon" />
           <span>17th to 19th July, 2024</span>
         </div>
       </div>
       <!-- conference schedule button -->
-      <div class="w-full  flex">
-        <button class="mx-auto inline-block bg-[#DE0220] px-6 py-4 text-lg text-white">
-        <a href="/schedule">See Conference Schedule</a>
-      </button>
+      <div class="w-full flex">
+        <button
+          class="mx-auto inline-block bg-[#DE0220] px-6 py-4 text-lg text-white"
+        >
+          <a href="/schedule">See Conference Schedule</a>
+        </button>
       </div>
       <!-- sponsors -->
       <div class="my-8 items-center justify-between hidden md:flex">
-        <div> 
+        <div>
           <div class="flex items-center gap-1">
-          <img src="./images/logo.png" alt="logo" class="inline" >
-          <div>
-            <span class="block text-[#DE0220] leading-[1]">Ghana</span>
-            <span class="block text-[#000D30] leading-[1]">Data Science</span>
-            <span class="block text-[#000D30] leading-[1]">Summit 2024</span>
+            <img src="./images/logo.png" alt="logo" class="inline" />
+            <div>
+              <span class="block text-[#DE0220] leading-[1]">Ghana</span>
+              <span class="block text-[#000D30] leading-[1]">Data Science</span>
+              <span class="block text-[#000D30] leading-[1]">Summit 2024</span>
+            </div>
           </div>
         </div>
-        </div>
-      
-        <div><img src="./images/KNUST.png" alt="knust logo"></div>
-        <div><img src="./images/RAIL.png" alt="RAIL logo"></div>
-        <div>
-          <img src="./images/transparent_logo_data_science_network-removebg-preview 1.png" alt="data science network logo">
-        </div>
-        <div><img src="./images/deeplearningindaba.png" alt="deeplearningindaba logo"></div>
-      
 
+        <div><img src="./images/KNUST.png" alt="knust logo" /></div>
+        <div><img src="./images/RAIL.png" alt="RAIL logo" /></div>
+        <div>
+          <img
+            src="./images/transparent_logo_data_science_network-removebg-preview 1.png"
+            alt="data science network logo"
+          />
+        </div>
+        <div>
+          <img
+            src="./images/deeplearningindaba.png"
+            alt="deeplearningindaba logo"
+          />
         </div>
       </div>
     </section>
     <!-- what happens at indaba, date and venue -->
-    <section class="bg-[#000D30] w-screen mx-0 block p-8 flex flex-col md:flex-row gap-4">
+    <section
+      class="bg-[#000D30] w-screen mx-0 block p-8 flex flex-col md:flex-row gap-4"
+    >
       <div class="flex-1">
         <div class="mb-4">
           <p class="text-5xl text-white font-sm">What happens at</p>
-        <div class="flex items-center gap-1">
-          <img src="./images/INDABAX.png" alt="./IndabaX text" class="inline-block h-[2rem]"><p class="inline-block text-5xl text-white font-sm">Ghana?</p> </div>
+          <div class="flex items-center gap-1">
+            <img
+              src="./images/INDABAX.png"
+              alt="./IndabaX text"
+              class="inline-block h-[2rem]"
+            />
+            <p class="inline-block text-5xl text-white font-sm">Ghana?</p>
+          </div>
         </div>
-      <div class="text-white">
-        <p class="mb-4">The Ghana Data Science Summit (IndabaX Ghana) is the vibrant summit where Ghana's data science community converges to inspire, innovate, and illuminate the path forward in the realm of Data Science and Machine Intelligence. </p>
-        <p class="mb-4">Celebrating our 5th anniversary this year, we're gearing up for an unforgettable gathering in the heart of Ghana, bringing together a diverse mix of the world's most brilliant minds driving change and shaping the future of technology, analytics, and artificial intelligence.</p>
-        <p class="mb-4">
-          Join us for a dynamic conference experience like no other, where you'll have the chance to network with pioneers, learn from industry leaders, and engage in capacity-building workshops designed to elevate your skills and understanding of Data Mining, Machine Learning, and AI.
-        </p>
-      </div>
+        <div class="text-white">
+          <p class="mb-4">
+            The Ghana Data Science Summit (IndabaX Ghana) is the vibrant summit
+            where Ghana's data science community converges to inspire, innovate,
+            and illuminate the path forward in the realm of Data Science and
+            Machine Intelligence.
+          </p>
+          <p class="mb-4">
+            Celebrating our 5th anniversary this year, we're gearing up for an
+            unforgettable gathering in the heart of Ghana, bringing together a
+            diverse mix of the world's most brilliant minds driving change and
+            shaping the future of technology, analytics, and artificial
+            intelligence.
+          </p>
+          <p class="mb-4">
+            Join us for a dynamic conference experience like no other, where
+            you'll have the chance to network with pioneers, learn from industry
+            leaders, and engage in capacity-building workshops designed to
+            elevate your skills and understanding of Data Mining, Machine
+            Learning, and AI.
+          </p>
+        </div>
+        <div class="flex gap-4 self-start">
+          <button
+            class="inline-block bg-[#DE0220] px-3 py-2 md:px-5 md:py-3 text-lg text-white"
+          >
+            <a href="/schedule" class="min-w-fit">See last year's event</a>
+          </button>
+          <button
+            class="inline-block bg-none border px-3 py-2 md:px-5 md:py-3 text-lg text-white"
+          >
+            <a href="/share">Share this event</a>
+          </button>
+        </div>
       </div>
       <!-- venue card -->
-      <div class="w-full min-h-fit  bg-white border-[#111111] border-4 flex-[0.8]" style="box-shadow: 12px 12px 0 0 red;"> 
+      <div
+        class="w-full min-h-fit bg-white border-[#111111] border-4 flex-[0.8]"
+        style="box-shadow: 12px 12px 0 0 red"
+      >
+        <span
+          class="border-b-4 border-[#111111] p-4 text-lg w-full inline-block font-bold text-[#000D30]"
+        >
+          Ghana Data Science Summit 2024 Details
+        </span>
+        <div class="px-8 pt-8 pb-16">
+          <!-- stats -->
+          <div class="flex justify-between gap-4 my-6">
+            <!-- duration -->
+            <div
+              class="border-r-2 flex-[0.75] border-[#000D30] flex flex-col items-start justify-center gap-4"
+            >
+              <p class="text-5xl font-black text-[#DE0220]">3</p>
+              <p>Days</p>
+            </div>
+            <!-- speakers -->
+            <div
+              class="border-r-2 flex flex-1 flex-col border-[#000D30] items-center justify-center gap-4"
+            >
+              <p class="text-5xl font-black text-[#DE0220]">25</p>
+              <p>Speakers</p>
+            </div>
+            <!-- sessions -->
+            <div class="flex flex-1 flex-col items-center justify-center gap-4">
+              <p class="text-5xl font-black text-[#DE0220]">32</p>
+              <p>Sessions</p>
+            </div>
+          </div>
+          <!-- Event Date and add to calender -->
+          <div class="mb-4">
+            <span>Event Date</span>
+            <p class="text-3xl font-black text-[#DE0220]">July 17 - 19, 2024</p>
+            <span>Add to Calendar</span>
+          </div>
 
-  <span class="border-b-4 border-[#111111] p-4 text-lg w-full inline-block font-bold text-[#000D30]">
-    Ghana Data Science Summit 2024 Details
-  </span>
-  <!-- stats -->
-  <div class="flex justify-around my-6">
-    <!-- duration -->
-    <div class="border-r-2 border-[#000D30] flex flex-col items-center justify-center">
-      <p>3</p>
-      <p>Days</p>
-    </div>
+          <div>
+            <span>Venue</span>
+            <p class="text-2xl font-black text-[#DE0220]">
+              Kwame Nkrumah University of Science & Technology
+            </p>
+            <span>Get directions to venue</span>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- speakers -->
-    <div class="border-r-2 border-[#000D30]">
-      <p>25</p>
-      <p>Speakers</p>
-    </div>
-    <!-- sessions -->
-    <div class="border-r-1 border-[#000D30]">
-      <p>32</p>
-      <p>Sessions</p>
-    </div>
-  </div>
+    <section class="bg-white w-full h-fit md:my-14 text-wrap">
+      <div class="mb-2 mx-10">
+        <h3 class="text-4xl md:text-5xl w-[90%] text-[#000D30] font-extrabold">
+          <span class="text-[#DE0220]">25+ Speakers </span> creating meaningful
+          solutions to local problems
+        </h3>
+      </div>
+      <p class="mx-10 max-w-3xl text-wrap w-[90%] text-[#000D30] text-lg">
+        We’re bringing together some of the most brilliant and creative minds
+        working on everything from machine learning to data analytics, AI
+        Research, and more.
+      </p>
+
+      <!-- speaker cards -->
+      <div
+        class="flex gap-4 justify-center w-full mt-8 flex-wrap md:justify-between items-center"
+      >
+        <!-- speaker 1 -->
+        <div class="flex-1 w-full min-w-[230px] max-w-[320px]">
+          <img src="./images/Rectangle 24.png" class="w-full" alt="speaker" />
+          <div
+            class="bg-[#000D30] border-b-8 text-white border-[#DE0220] text-center py-4"
+          >
+            <!-- name -->
+            <h5 class="text-2xl font-bold">Micheal Answer</h5>
+            <p class="text-lg">AI Researcher,</p>
+            <p class="text-lg">Google Deepmind</p>
+          </div>
+        </div>
+        <!-- speaker two -->
+        <div class="flex-1 w-full min-w-[230px] max-w-[320px]">
+          <img
+            src="./images/Rectangle 24(1).png"
+            class="w-full"
+            alt="speaker"
+          />
+          <div
+            class="bg-[#000D30] border-b-8 text-white border-[#DE0220] text-center py-4"
+          >
+            <!-- name -->
+            <h5 class="text-2xl font-bold">Aseda Addai-Desehr</h5>
+            <p class="text-lg">Data Analyst,</p>
+            <p class="text-lg">Shopify</p>
+          </div>
+        </div>
+        <!-- speaker three -->
+        <div class="flex-1 w-full min-w-[230px] max-w-[320px]">
+          <img
+            src="./images/Rectangle 24(2).png"
+            class="w-full"
+            alt="speaker"
+          />
+          <div
+            class="bg-[#000D30] border-b-8 text-white border-[#DE0220] text-center py-4"
+          >
+            <!-- name -->
+            <h5 class="text-2xl font-bold">Sarah Kennedy</h5>
+            <p class="text-lg">Cheif of Staff,</p>
+            <p class="text-lg">Zindi Africa</p>
+          </div>
+        </div>
+        <!-- speaker four -->
+        <div class="flex-1 w-full min-w-[230px] max-w-[320px]">
+          <img
+            src="./images/Rectangle 24(3).png"
+            class="w-full"
+            alt="speaker"
+          />
+          <div
+            class="bg-[#000D30] border-b-8 text-white border-[#DE0220] text-center py-4"
+          >
+            <!-- name -->
+            <h5 class="text-2xl font-bold">Julius Amegadzi</h5>
+            <p class="text-lg">Lecturer ,</p>
+            <p class="text-lg">Acedemic City University</p>
+          </div>
+        </div>
+      </div>
+      <button
+        class="mt-4 inline-block bg-[#DE0220] px-6 py-4 text-lg text-white"
+      >
+        <a href="/speakers">View confirmed speakers for IndabaX Ghana 2024</a>
+      </button>
+    </section>
+    <!-- Session Topics -->
+    <section>
+      <div
+        class="bg-[#000D30] w-full text-white text-5xl font-bold text-center mt-12 mb-8 py-12"
+      >
+        Session Topics
+      </div>
+      <!-- topics -->
+      <div
+        class="flex flex-col md:flex-row flex-wrap gap-4 justify-between mb-12 mx-10"
+      >
+        <!-- topic 1 -->
+        <div class="flex gap-2 items-center">
+          <div
+            class="bg-[#DE0220] w-20 h-20 flex items-center justify-center inline-block"
+          >
+            <img src="./images/Vector(4).svg" alt="love" />
+          </div>
+          <div class="text-xl font-semibold">
+            <p>Data Science for Public Health:</p>
+            <p>Case Studies from the Front Lines</p>
+          </div>
+        </div>
+        <!-- topic 2 -->
+        <div class="flex gap-2 items-center">
+          <div
+            class="bg-[#000D30] w-20 h-20 flex items-center justify-center inline-block"
+          >
+            <img src="./images/Vector(2).svg" alt="love" />
+          </div>
+          <div class="text-xl font-semibold">
+            <p>The power of Geospacial Data:</p>
+            <p>Mapping the future of Africa</p>
+          </div>
+        </div>
+        <!-- topic three -->
+        <div class="flex gap-2 items-center">
+          <div
+            class="bg-[#DE0220] w-20 h-20 flex items-center justify-center inline-block"
+          >
+            <img src="./images/Vector(5).svg" alt="love" />
+          </div>
+          <div class="text-xl font-semibold">
+            <p>Harnesing AI for sustainable</p>
+            <p>Development in Africa</p>
+          </div>
+        </div>
+        <!-- topic four -->
+        <div class="flex gap-2 items-center">
+          <div
+            class="bg-[#000D30] w-20 h-20 flex items-center justify-center inline-block"
+          >
+            <img src="./images/carbon_machine-learning-model.svg" alt="love" />
+          </div>
+          <div class="text-xl font-semibold">
+            <p>Machine Learning demystified:</p>
+            <p>From Theory to Practice</p>
+          </div>
+        </div>
       </div>
     </section>
     <!-- sponsors -->
@@ -287,7 +530,7 @@
     </section>
 
     <!-- faq -->
-    <section class="my-14">
+    <section class="my-14 mx-10">
       <div class="flex flex-col justify-start md:justify-center items-center">
         <div class="mb-5 w-fit">
           <h1 class="text-[#161C2D] text-4xl font-semibold">
