@@ -35,3 +35,36 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
+
+
+//Schedule page js code BELOW!!
+const tab1 = document.querySelector("#tab1");
+const tab2 = document.querySelector("#tab2");
+const tab3 = document.querySelector("#tab3");
+
+const Tabs = [tab1, tab2, tab3];
+
+Tabs.forEach((tab) => {
+    toggleTabs(tab);
+
+    tab.addEventListener("click", () => {
+        removeActiveClass(Tabs);
+        tab.classList.add("active");
+        toggleTabs(tab);
+    })
+})
+
+function toggleTabs(tab) {
+    if(tab.classList.contains("active")) {
+        tab.style.backgroundColor = "#FFF";
+        tab.style.color = "#000";
+    }
+}
+
+function removeActiveClass(Tabs) {
+    Tabs.forEach((tab) => {
+        tab.classList.remove("active");
+        tab.style.backgroundColor = "#DE0220";
+        tab.style.color = "#FFF";
+    })
+}
