@@ -41,15 +41,30 @@ document.addEventListener('DOMContentLoaded', () => {
 const tab1 = document.querySelector("#tab1");
 const tab2 = document.querySelector("#tab2");
 const tab3 = document.querySelector("#tab3");
+const day1 = document.querySelector("#day1");
+const day2 = document.querySelector("#day2");
+const day3 = document.querySelector("#day3");
 
 const Tabs = [tab1, tab2, tab3];
+const Days = [day1, day2, day3];
+
+const Obj = {
+    tab1: day1,
+    tab2: day2,
+    tab3: day3
+}
+
+displayDayEvent(Days);
 
 Tabs.forEach((tab) => {
     toggleTabs(tab);
 
     tab.addEventListener("click", () => {
-        removeActiveClass(Tabs);
+        removeDayActiveClass(Days);
+        removeTabActiveClass(Tabs);
+        Obj[tab.id].classList.add("active");
         tab.classList.add("active");
+        displayDayEvent(Days);
         toggleTabs(tab);
     })
 })
@@ -61,10 +76,26 @@ function toggleTabs(tab) {
     }
 }
 
-function removeActiveClass(Tabs) {
+function removeTabActiveClass(Tabs) {
     Tabs.forEach((tab) => {
         tab.classList.remove("active");
         tab.style.backgroundColor = "#DE0220";
         tab.style.color = "#FFF";
+    })
+}
+
+function removeDayActiveClass(Days) {
+    Days.forEach((day) => {
+        day.classList.remove("active");
+    })
+}
+
+function displayDayEvent(Days) {
+    Days.forEach((day) => {
+        if(day.classList.contains("active")) {
+            day.style.display = "block";
+        } else {
+            day.style.display = "none";
+        }
     })
 }
