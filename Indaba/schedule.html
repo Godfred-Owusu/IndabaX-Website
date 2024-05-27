@@ -13,6 +13,15 @@
     <title>Document</title>
     <style>
       @layer utilities {
+        @font-face {
+          font-family: RBNo;
+          src: url("./font/RBNo3.1-Bold.otf");
+        }
+
+        #tab1, #tab2, #tab3 {
+          font-family: RBNo;
+        }
+
         .body-p {
           font-size: clamp(12px, 3vw, 24px);
         }
@@ -125,21 +134,21 @@
       <div
         id="tab1"
         style="min-width: 248px"
-        class="active border border-black py-4 px-19 ml-4 mr-16 text-center font-bold bg-[#DE0220]"
+        class="active border border-black py-4 px-19 ml-4 mr-16 text-center font-bold bg-[#DE0220] text-white"
       >
         Day 1
       </div>
       <div
         id="tab2"
         style="min-width: 248px"
-        class="border border-black py-4 px-19 mr-16 text-center font-bold bg-[#DE0220]"
+        class="border border-black py-4 px-19 mr-16 text-center font-bold bg-[#DE0220] text-white"
       >
         Day 2
       </div>
       <div
         id="tab3"
         style="min-width: 248px"
-        class="border border-black py-4 px-19 mr-16 text-center font-bold bg-[#DE0220]"
+        class="border border-black py-4 px-19 mr-16 text-center font-bold bg-[#DE0220] text-white"
       >
         Day 3
       </div>
