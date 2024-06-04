@@ -419,39 +419,87 @@
   </section>
 
   <!-- faq -->
-  <section class="my-14 mx-10">
+  <section id="faq" class="my-14 mx-10">
     <div class="flex flex-col justify-start md:justify-center items-center">
       <div class="mb-5 w-fit">
-        <h1 class="text-[#161C2D] text-4xl font-semibold">
+        <h1 class="text-[#161C2D] text-4xl font-semibold text-center">
           Frequently Asked Questions
         </h1>
         <p class="text-[#000D30] text-left md:text-center pt-5 pb-10">
           Here are some answers to some questions you <br />
           probably have on your mind.
         </p>
-        <div>
-          <!-- first -->
-          <div class="flex justify-between items-center border border-[#000D30] px-5 py-4 cursor-pointer">
-            <h2 class="font-bold">Is the conference totally free?</h2>
-            <i class="fa-solid fa-angle-right cursor-pointer"></i>
-          </div>
-          <!-- second -->
-          <div class="flex justify-between items-center border border-[#000D30] px-5 py-4 my-4 cursor-pointer">
-            <h2 class="font-bold">Is the conference totally free?</h2>
-            <i class="fa-solid fa-angle-right cursor-pointer"></i>
-          </div>
-          <!-- third -->
-          <div class="flex justify-between items-center border border-[#000D30] px-5 py-4 cursor-pointer">
-            <h2 class="font-bold">Is the conference totally free?</h2>
-            <i class="fa-solid fa-angle-right cursor-pointer"></i>
-          </div>
-          <!-- forth -->
-          <div class="flex justify-between items-center border border-[#000D30] px-5 py-4 my-4 cursor-pointer">
-            <h2 class="font-bold">Is the conference totally free?</h2>
-            <i class="fa-solid fa-angle-right cursor-pointer"></i>
+
+        <!--Accordions-->
+        <div class="relative mb-3 max-w-[856px] border border-[#000D30]">
+          <h6 class="mb-0">
+            <button
+              class="relative flex items-center w-full p-4 font-semibold text-left transition-all ease-in cursor-pointer border-slate-100 text-slate-700 group text-[#161C2D]"
+              data-collapse-target="animated-collapse-1">
+              <span class="font-bold">Is the conference totally free?</span>
+              <i
+                class="absolute right-0 px-5 text-base transition-transform fa fa-chevron-right group-open:rotate-[90deg]"></i>
+            </button>
+          </h6>
+          <div data-collapse="animated-collapse-1" class="h-0 overflow-hidden transition-all duration-300 ease-in-out">
+            <div class="p-4 text-base leading-normal">
+              Yes. The conference is free. It covers conference fee, snacks and lunch, souvenirs and short transportation on campus
+            </div>
           </div>
         </div>
-        <p class="mt-10">
+
+        <div class="relative mb-3 max-w-[856px] border border-[#000D30] md:mt-5">
+          <h6 class="mb-0">
+            <button
+              class="relative flex items-center w-full p-4 font-semibold text-left transition-all ease-in cursor-pointer border-slate-100 text-slate-700 group text-[#161C2D]"
+              data-collapse-target="animated-collapse-2">
+              <span class="font-bold">Is the conference totally free?</span>
+              <i
+                class="absolute right-0 px-5 text-base transition-transform fa fa-chevron-right group-open:rotate-[90deg]"></i>
+            </button>
+          </h6>
+          <div data-collapse="animated-collapse-2" class="h-0 overflow-hidden transition-all duration-300 ease-in-out">
+            <div class="p-4 text-base leading-normal">
+              Yes. The conference is free. It covers conference fee, snacks and lunch, souvenirs and short transportation on campus
+            </div>
+          </div>
+        </div>
+
+        <div class="relative mb-3 max-w-[856px] border border-[#000D30] md:mt-5">
+          <h6 class="mb-0">
+            <button
+              class="relative flex items-center w-full p-4 font-semibold text-left transition-all ease-in cursor-pointer border-slate-100 text-slate-700 group text-[#161C2D]"
+              data-collapse-target="animated-collapse-3">
+              <span class="font-bold">Is the conference totally free?</span>
+              <i
+                class="absolute right-0 px-5 text-base transition-transform fa fa-chevron-right group-open:rotate-[90deg]"></i>
+            </button>
+          </h6>
+          <div data-collapse="animated-collapse-3" class="h-0 overflow-hidden transition-all duration-300 ease-in-out">
+            <div class="p-4 text-base leading-normal">
+              Yes. The conference is free. It covers conference fee, snacks and lunch, souvenirs and short transportation on campus
+            </div>
+          </div>
+        </div>
+
+        <div class="relative mb-3 max-w-[856px] border border-[#000D30] md:mt-5">
+          <h6 class="mb-0">
+            <button
+              class="relative flex items-center w-full p-4 font-semibold text-left transition-all ease-in cursor-pointer border-slate-100 text-slate-700 group text-[#161C2D]"
+              data-collapse-target="animated-collapse-4">
+              <span class="font-bold">Is the conference totally free?</span>
+              <i
+                class="absolute right-0 px-5 text-base transition-transform fa fa-chevron-right group-open:rotate-[90deg]"></i>
+            </button>
+          </h6>
+          <div data-collapse="animated-collapse-4" class="h-0 overflow-hidden transition-all duration-300 ease-in-out">
+            <div class="p-4 text-base leading-normal">
+              Yes. The conference is free. It covers conference fee, snacks and lunch, souvenirs and short transportation on campus
+            </div>
+          </div>
+        </div>
+
+        <p class="mt-10 text-center">
           Haven't got your answer? <br class="block md:hidden" />
           <span class="font-bold text-[#DE0220] cursor-pointer">Contact our support now</span>
         </p>
@@ -612,6 +660,9 @@
       </div>
     </div>
   </section>
+
+  <!--material-tailwind CDN-->
+  <script src="https://unpkg.com/@material-tailwind/html@latest/scripts/collapse.js"></script>
 </body>
 
 </html>
