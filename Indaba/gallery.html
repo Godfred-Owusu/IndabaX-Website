@@ -5,10 +5,75 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet" />
   <title>Document</title>
 </head>
 
 <body>
+  <!-- header -->
+  <section class="px-10 sticky top-0 bg-white">
+    <header class="flex w-full items-center justify-between my-8 max-w-[1300px] m-auto">
+      <!-- logo -->
+      <div class="flex items-center gap-1">
+        <img src="./images/logo.png" alt="logo" class="inline" />
+        <div>
+          <span class="block text-[#DE0220] leading-[1]">Ghana</span>
+          <span class="block text-[#000D30] leading-[1]">Data Science</span>
+          <span class="block text-[#000D30] leading-[1]">Summit 2024</span>
+        </div>
+      </div>
+      <!-- biggger screen nav-->
+      <nav class="flex flex-row justify-between hidden md:inline-block w-full max-w-[1000px]">
+        <ul class="flex items-center w-full justify-around">
+          <li>
+            <a class="text-[#000D30] text-xl" href="./schedule.html">Schedule</a>
+          </li>
+          <li>
+            <a class="text-[#000D30] text-xl" href="/speakers">Speakers</a>
+          </li>
+          <li>
+            <a class="text-[#000D30] text-xl" href="/travel-guide">Travel Guide</a>
+          </li>
+          <li>
+            <a class="text-[#000D30] text-xl" href="../gallery.html.html">Gallery</a>
+          </li>
+          <li>
+            <a class="text-[#FFFFFF] text-xl bg-[#DE0220] py-[16px] px-[32px] font-normal" href="/register">Register</a>
+          </li>
+        </ul>
+      </nav>
+      <!-- mobile screen nav humb -->
+      <div id="openModalBtn"
+        class="bg-[#000D30] rounded flex flex-col gap-1 p-2 cursor-pointer absolute right-8 md:hidden w-[40px]">
+        <div class="h-0.5 my-[2px] w-full px-2 bg-white rounded-sm"></div>
+        <div class="h-0.5 my-[2px] w-full px-2 bg-white rounded-sm"></div>
+        <div class="h-0.5 my-[2px] w-full px-2 bg-white rounded-sm"></div>
+      </div>
+    </header>
+    <!-- modal mobile screen -->
+    <div id="modal" class="fixed inset-0 hidden items-center justify-end transition-opacity duration-300 z-[999]">
+      <div id="modalContent"
+        class="bg-[#000D30] w-2/3 h-full mt-20 transform translate-x-full transition-transform duration-300">
+        <div class="flex justify-end p-4">
+          <!-- <h2 class="text-xl font-semibold">Modal Title</h2> -->
+          <button id="closeModalBtn" class="text-white text-xl flex-end">
+            <i class="fa-solid fa-xmark fa-2xl"></i>
+          </button>
+        </div>
+        <div class="p-8">
+          <ul class="text-white text-xl font-extralight flex flex-col gap-6">
+            <li><a href="/">Home</a></li>
+            <li><a href="./schedule.html">Schedule</a></li>
+            <li><a href="/speaker">Speakers</a></li>
+            <li><a href="/travel-guide">Travel Guide</a></li>
+            <li><a href="./gallery.html">Gallery</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <h1 class="text-[#000D30] text-center text-4xl font-bold py-10">
     Pictures From Past Events
   </h1>
