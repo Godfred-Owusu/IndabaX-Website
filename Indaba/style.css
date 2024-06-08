@@ -23,13 +23,18 @@
   @font-face {
     font-family: RBNo;
     src: url("./font/RBNo3.1-Bold.otf");
-    src: url("./font/RBNo3.1-Thin.otf");
   }
 
   @font-face {
     font-family: RBNo;
     src: url("./font/RBNo3.1-Thin.otf");
     font-weight: 100;
+  }
+
+  @font-face {
+    font-family: RBNo;
+    src: url("./font/RBNo3.1-Extrabold.otf");
+    font-weight: 450;
   }
 
   #tab1,
@@ -69,12 +74,7 @@
     font-family: Inter;
   }
 
-  #ghana-p {
-    font-family: RBNo;
-    font-size: clamp(33px, 4vw, 46px) !important;
-  }
-
-  #happens {
+  #happens p, #happens span{
     font-size: clamp(33px, 4vw, 46px) !important;
   }
 
