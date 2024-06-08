@@ -94,4 +94,19 @@
   #why-sponsor p {
     font-size: clamp(6px, 1rem, 16px);
   }
+
+  /*Travel guide*/
+  #travel-header p{
+    font-size: clamp(24px, 3rem, 48px);
+    font-weight: 700;
+  }
+
+  #travel-header span {
+    font-size: clamp(12px, 1rem, 24px);
+  }
+
+  #travel-p-head {
+    font-size: clamp(16px, 3rem, 32px);
+    font-weight: 700;
+  }
 }
