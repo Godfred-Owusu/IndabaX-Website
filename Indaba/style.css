@@ -109,4 +109,30 @@
     font-size: clamp(16px, 3rem, 32px);
     font-weight: 700;
   }
+
+  /*Mentorship Page*/
+  #mentorship-header p{
+    font-size: clamp(24px, 3rem, 48px);
+    font-weight: 700;
+    line-height: 55px;
+  }
+
+  #mentorship-p-head {
+    font-size: clamp(16px, 1.5rem, 32px);
+    font-weight: 700;
+  }
+
+  #mentorship-benefits li{
+    font-size: clamp(12px, 1rem, 16px);
+  }
+
+  #mentorship-btn-div a{
+    font-size: clamp(12px, 1rem, 16px);
+  }
+
+  #mentorship-questions p {
+    font-size: clamp(48px, 2rem, 64px);
+    font-weight: 700;
+    line-height: 56px;
+  }
 }
